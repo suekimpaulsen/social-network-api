@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "name": "social-network-api",
   "description": "",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/suekimpaulsen/social-network-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.4"
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
   }
 }
