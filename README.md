@@ -16,15 +16,13 @@ SO THAT my website can handle large amounts of unstructured data
 - WHEN I test API POST and DELETE routes in Insomnia Core, I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 ## Features:
+- Reaction is not a model, but was used as the ```reaction``` field's subdocument schema in the ```Thought``` model
 - Created a virtual called ```friendCount``` that retrieves the length of the user's ```friends``` array field on query
 - Created a virtual called ```reactionCount``` that retrieves the length of the thought's ```reactions``` array field on query
 ### Example:
 ![get-users](./assets/screenshots/get-users.png)
-- Reaction is not a model, but was used as the ```reaction``` field's subdocument schema in the ```Thought``` model
-
 
 ## Technologies Used:
-
 1. Mongoose
 ```javascript
 thoughtText: {
